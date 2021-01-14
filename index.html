@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 002</title>
+    <!-- Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Style/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/4e42eb6fbf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Intro section -->
+      <section class="intro">
+        <div class="statuscheckout">
+          <h1>StarGate VPN <i class="fas fa-satellite"></i></h1>
+          <h3>Secure your digital life effortlessly</h3>
+          <h5>100% money-back guarantee for your first 30 days of service</h5>
+        </div>
+      </section>
+      <!-- Step 1 section- picking plan -->
+      <section class="step1">
+        <h2>1. Choose a plan</h2>
+        <h4>Select Currency</h4>
+        <select class="custom-select">
+          <option selected>Select a currency</option>
+          <option value="1">CAD</option>
+          <option value="2">USD</option>
+          <option value="3">EUR</option>
+          <option value="3">CNY</option>
+        </select>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h3>3 months</h3>
+                <h2>$24.99/month</h2>
+                <p>Billed every month</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h3>12 months</h3>
+                <h2>$14.99/month</h2>
+                <p>Billed $179.88 once a year</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h3>24 months</h3>
+                <h2>$9.99/month</h2>
+                <p>Billed $239.76 now</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Step 2 section -->
+      <section class="step2">
+          <div>
+              <h2>2. Activate privacy beyond VPN (optional)</h2>
+              <div class="bigbox"> 
+                  <div class="grey">
+                      <p>Ever got your email leaked online?</p>
+                      <p>Think companies are selling your data?</p>
+                  </div>
+                  <i class="fas fa-envelope-open-text"></i>
+                  <p>Get immediate alerts if your email appears in a leaked databases</p>
+                  <hr>
+                  <i class="fas fa-search"></i>
+                  <p>Search privately with no ads or logs. Get unbiased and organic results within seconds</p>
+                  <div class="grey">
+                    <a href="#" class="btn btn-primary">Activate $1.49/month</a>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- Step 3 Select a payment -->
+      <section class="step3">
+          <h2>3. Select payment</h2>
+          <select class="custom-select">
+            <option selected>Type of credit card</option>
+            <option value="1">Mastercard</option>
+            <option value="2">Visa</option>
+            <option value="3">American Express</option>
+            <option value="3">Paypal</option>
+            <option value="3">Apple Pay</option>
+            <option value="3">Google Pay</option>
+            <option value="3">Crypto Currency</option>
+          </select>
+          <form action="paymentform">
+            <label for="name"></label>
+            <p>Name on the card</p>
+            <input type="name" name="name" id="user-email" class="form-control" placeholder="Full name">
+            <label for="cardnumber"></label>
+            <p>Card Number</p>
+            <input type="cardnumber" class="form-control" placeholder="XXXX XXXX XXXX XXXX">
+            <label for="expirationdate"></label>
+            <p>Expiration Date</p>
+            <input type="expirationdate" name="expirationdate" id="expirationdate" class="form-control" placeholder="MM / YY">
+            <label for="CVC"></label>
+            <p>CVC</p>
+            <input type="number" class="form-control" placeholder="CVC">
+          </form>
+      </section>
+
+      <!-- Checkout section -->
+      <section class="summary">
+          <h2>4. Order Summary & Checkout</h2>
+          <div class="checkout">
+              <p>Your subscription - 24 months plan</p>
+              <p>$239.76</p>
+          </div>
+          <div class="checkout">
+              <p>First time buyer promo code</p>
+              <p> - $5</p>
+          </div>
+          
+          <div class="checkout">
+              <h6>Final Total:</h6>
+              <h6>$234.76</h6>
+          </div>
+          <button class="btn btn-primary btn-lg">Complete purchase</button>
+
+      </section>
+    </div>
+  </body>
+</html>

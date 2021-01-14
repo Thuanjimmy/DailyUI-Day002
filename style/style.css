@@ -1,0 +1,8 @@
+body {
+    background-color: #30475e;
+    text-align: center;
+
+}
+.checkout{
+    display: flex;
+}

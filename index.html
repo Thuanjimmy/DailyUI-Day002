@@ -45,15 +45,17 @@
       </section>
       <!-- Step 1 section- picking plan -->
       <section class="step1">
-        <h2>1. Choose a plan</h2>
-        <h4>Select Currency</h4>
-        <select class="custom-select">
-          <option selected>Select a currency</option>
-          <option value="1">CAD</option>
-          <option value="2">USD</option>
-          <option value="3">EUR</option>
-          <option value="3">CNY</option>
-        </select>
+        <h2 class="heading">1. Choose a plan</h2>
+        <h4 class="sub-heading">Select Currency</h4>
+        <div class="currency">
+          <select class="custom-select">
+            <option selected>Select a currency:</option>
+            <option value="1">CAD</option>
+            <option value="2">USD</option>
+            <option value="3">EUR</option>
+            <option value="3">CNY</option>
+          </select>
+        </div>
         <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="card">
@@ -89,27 +91,33 @@
       </section>
       <!-- Step 2 section -->
       <section class="step2">
-          <div>
-              <h2>2. Activate privacy beyond VPN (optional)</h2>
-              <div class="bigbox"> 
-                  <div class="grey">
-                      <p>Ever got your email leaked online?</p>
-                      <p>Think companies are selling your data?</p>
-                  </div>
-                  <i class="fas fa-envelope-open-text"></i>
-                  <p>Get immediate alerts if your email appears in a leaked databases</p>
-                  <hr>
-                  <i class="fas fa-search"></i>
-                  <p>Search privately with no ads or logs. Get unbiased and organic results within seconds</p>
-                  <div class="grey">
-                    <a href="#" class="btn btn-primary">Activate $1.49/month</a>
-                  </div>
-              </div>
+        <div class="container extra">
+          <div class="row row1">
+            <div class="col-lg-4 pad">
+              <p class="red">Ever got your email leaked online?</p>
+              <p class="red">Think companies are selling your data?</p>
+              <a href="#" class="btn btn-primary">Activate</a> $1.49/month
+            </div>
+            <div class="col-lg-4 col-md-6 toflex pad">
+              <i class="fas fa-envelope-open-text fa-4x"></i>
+              <p>
+                Get immediate alerts if your email appears in a leaked databases
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-6 toflex pad">
+              <i class="fas fa-search fa-4x"></i>
+            <p>
+              Search privately with no ads or logs. Get unbiased and organic
+              results within seconds
+            </p>
+            </div>
           </div>
+        </div>
       </section>
       <!-- Step 3 Select a payment -->
       <section class="step3">
-          <h2>3. Select payment</h2>
+        <h2 class="heading">3. Select payment</h2>
+        <div class="container payment">
           <select class="custom-select">
             <option selected>Type of credit card</option>
             <option value="1">Mastercard</option>
@@ -122,39 +130,66 @@
           </select>
           <form action="paymentform">
             <label for="name"></label>
-            <p>Name on the card</p>
-            <input type="name" name="name" id="user-email" class="form-control" placeholder="Full name">
+            <p class="sub-heading">Name on the card:</p>
+            <input
+              type="name"
+              name="name"
+              id="user-email"
+              class="form-control"
+              placeholder="Full name"
+            />
             <label for="cardnumber"></label>
-            <p>Card Number</p>
-            <input type="cardnumber" class="form-control" placeholder="XXXX XXXX XXXX XXXX">
+            <p class="sub-heading">Card Number:</p>
+            <input
+              type="cardnumber"
+              class="form-control"
+              placeholder="XXXX XXXX XXXX XXXX"
+            />
             <label for="expirationdate"></label>
-            <p>Expiration Date</p>
-            <input type="expirationdate" name="expirationdate" id="expirationdate" class="form-control" placeholder="MM / YY">
+            <p class="sub-heading">Expiration Date:</p>
+            <input
+              type="expirationdate"
+              name="expirationdate"
+              id="expirationdate"
+              class="form-control"
+              placeholder="MM / YY"
+            />
             <label for="CVC"></label>
-            <p>CVC</p>
-            <input type="number" class="form-control" placeholder="CVC">
+            <p class="sub-heading">CVC:</p>
+            <input type="number" class="form-control" placeholder="CVC" />
           </form>
+        </div>
       </section>
 
       <!-- Checkout section -->
       <section class="summary">
-          <h2>4. Order Summary & Checkout</h2>
-          <div class="checkout">
-              <p>Your subscription - 24 months plan</p>
-              <p>$239.76</p>
-          </div>
-          <div class="checkout">
-              <p>First time buyer promo code</p>
-              <p> - $5</p>
-          </div>
-          
-          <div class="checkout">
-              <h6>Final Total:</h6>
-              <h6>$234.76</h6>
-          </div>
-          <button class="btn btn-primary btn-lg">Complete purchase</button>
+        <h2 class="heading">4. Order Summary & Checkout</h2>
+        <div class="checkout">
+          <p>Your subscription - 24 months plan</p>
+          <p>$239.76</p>
+        </div>
+        <div class="checkout">
+          <p>First time buyer promo code</p>
+          <p>- $5</p>
+        </div>
 
+        <div class="checkout">
+          <h5>Final Total:</h5>
+          <h5>$234.76</h5>
+        </div>
+        <button class="btn btn-primary btn-lg">Complete purchase</button>
       </section>
+      <!-- Footer section -->
+      <footer>
+        <div class="container-fluid">
+          <i class="fab fa-twitter footer"></i>
+          <i class="fas fa-envelope footer"></i>
+          <i class="fab fa-facebook-square footer"></i>
+          <i class="fab fa-instagram footer"></i>
+          <p><i class="far fa-copyright footer"></i>
+          Copyright 2021 StarGate</p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
